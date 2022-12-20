@@ -11,6 +11,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* <Route path="/sumamry" element={} /> */}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

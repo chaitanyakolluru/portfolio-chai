@@ -30,4 +30,13 @@ describe('Home', () => {
     expect(screen.getByText(/typescript/i)).toBeDefined();
     expect(screen.getByText(/Scripting languages/i)).toBeDefined();
   });
+
+  it('shows education', async () => {
+    render();
+
+    await userEvent.click(screen.getByRole('button', { name: /chai/i }));
+
+    expect(screen.getByText(/electronics/i)).toBeDefined();
+    expect(screen.getByText(/kansas/i)).toBeDefined();
+  });
 });
