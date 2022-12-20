@@ -2,6 +2,7 @@ import Card from '../components/Card';
 
 const bulletedContent = {
   AA: [
+    'Responsibilities:',
     `•	Experience with Spotify’s Backstage framework and front-end development with ReactJS and backend with Typescript. `,
     `•	Experience working with Material UI and leveraging its UI elements. `,
     `•	Developing backend micro-service applications and scripts using Python.`,
@@ -17,6 +18,7 @@ const bulletedContent = {
     `•	Administered application servers made from Linux/Windows OS in in-house datacenters using Puppet Enterprise and Puppet Opensource.`,
   ],
   GBIT: [
+    'Responsibilities:',
     `•	Developing and managing code base for Infrastructure as Code using Puppet Enterprise.`,
     `•	Administered application servers made from Linux/Windows OS in in-house datacenters using Puppet Enterprise.`,
     `•	Developing Terraform modules to provision Microsoft Azure resources.`,
@@ -25,6 +27,7 @@ const bulletedContent = {
     `•	Setting up CI/CD pipelines using Jenkins.`,
   ],
   SMS: [
+    'Responsibilities:',
     `•	Administering, configuring, and supporting RHEL 6/7 Linux servers used for Big-Data analytics.`,
     `•	Using Infrastructure as Code practices streamline server build processes and promote automation.`,
     `•	Developing Puppet Enterprise code base to configure RHEL Linux instances.`,
@@ -50,26 +53,36 @@ const Professional: React.FC = () => {
   return (
     <>
       <Card
-        title={`American Airlines, Fort Worth – TX - Apr 2021 - Current
+        title={`American Airlines, Fort Worth – TX
     
 `}
-        content={`
-    Team Lead, IT Infrastructure / Sr. DevOps Engineer`}
+        content={[
+          `
+        Team Lead, IT Infrastructure / Sr. DevOps Engineer`,
+          `Apr 2021 - Current`,
+        ]}
         bulletedContent={bulletedContent.AA}
       />
       <Card
-        title={`Global Bridge Infotech Inc. - Oct 2017 – Mar 2021
+        title={`Global Bridge Infotech Inc.
 `}
-        content={`
-        American Airlines Inc, Fort Worth – TX (Client) - Sr. DevOps Engineer`}
+        content={[
+          `
+        American Airlines Inc, Fort Worth – TX (Client) - Sr. DevOps Engineer`,
+          `Oct 2017 – Mar 2021`,
+        ]}
         bulletedContent={bulletedContent.GBIT}
       />
       <Card
         title={`Server Management Services LLC. - Aug 2013 – Sep 2017
     
 `}
-        content={`
-    Sr. DevOps Engineer`}
+        content={[
+          `American Express, Phoenix – AZ (Client) - Sr. DevOps Engineer / Software Engineer - Apr 2017 – Sep 2017`,
+          `Cardinal Health, Dublin - OH & Nashville – TN (Client) - Sr. Software Engineer / DevOps Engineer - Mar 2015 – Feb 2017`,
+          `Cisco Systems, San Jose – CA (Client) - Sr. Linux System Administrator / DevOps Engineer - Feb 2014 – Mar 2015`,
+          `Wal-Mart, Bentonville – AR (Client) - System Administrator - Aug 2013 – Jan 2014`,
+        ]}
         bulletedContent={bulletedContent.SMS}
       />
     </>

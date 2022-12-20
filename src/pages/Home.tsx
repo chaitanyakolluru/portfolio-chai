@@ -2,23 +2,26 @@ import Card from '../components/Card';
 
 interface CardDetails {
   title: string;
-  content?: string;
+  content?: string[];
   bulletedContent?: string[];
 }
 const details: CardDetails[] = [
   {
     title: 'SUMMARY',
-    content: `Motivated, self-learning, passionate engineer with a penchant for 
+    content: [
+      `Motivated, self-learning, passionate engineer with a penchant for 
 automation. DevOps Engineer with a strong background in System 
 Administration of Linux servers, IaC and CI/CD, and with experience 
 developing backend micro-service and web applications`,
+    ],
   },
   {
     title: 'CERTIFICATIONS',
-    content: `Certified Kubernetes Security Specialist. 
-  Certified Kubernetes Administrator. 
-  Puppet Certified Professional. 
-  `,
+    content: [
+      `Certified Kubernetes Security Specialist`,
+      `Certified Kubernetes Administrator`,
+      `Puppet Certified Professional`,
+    ],
   },
   {
     title: 'TECHNICAL EXPERTISE',
@@ -32,9 +35,11 @@ developing backend micro-service and web applications`,
   },
   {
     title: 'EDUCATION',
-    content: `Bachelor of Science in Electronics and Communication – JNTU Hyderabad – 2006 – 2010
-  Master of Science in Electrical Engineering – University of Missouri Kansas City – 2011 - 2012
+    content: [
+      `Bachelor of Science in Electronics and Communication – JNTU Hyderabad – 2006 – 2010`,
+      `Master of Science in Electrical Engineering – University of Missouri Kansas City – 2011 - 2012
   `,
+    ],
   },
 ];
 

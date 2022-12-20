@@ -1,13 +1,17 @@
 const Card: React.FC<{
   title: string;
-  content?: string;
+  content?: string[];
   bulletedContent?: string[];
 }> = ({ title, content, bulletedContent }) => {
   return (
     <div className="card w-180 bg-base-300 shadow-xl">
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
-        <p>{content && content}</p>
+        <ul>
+          {content &&
+            content.map((item) => <li key={content.indexOf(item)}>{item}</li>)}
+        </ul>
+        <br></br>
         <ol>
           {bulletedContent &&
             bulletedContent.map((item) => (
