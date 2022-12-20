@@ -2,12 +2,11 @@
   "name": "portfolio-chai",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "jest ./src/**/*.{ts,tsx} --watchAll"
+    "test": "jest ./src/**/*.{js,jsx,ts,tsx} --watchAll"
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",
