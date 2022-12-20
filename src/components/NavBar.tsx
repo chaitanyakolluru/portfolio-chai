@@ -19,7 +19,7 @@ const NavBar: React.FC<{ title?: string }> = ({
           <button>{title}</button>
         </Link>
       </div>
-      {/* <div className="navbar-center flex">
+      <div className="navbar-center flex">
         <ul className="menu menu-horizontal px-1">
           <li>
             <a>Item 1</a>
@@ -50,7 +50,7 @@ const NavBar: React.FC<{ title?: string }> = ({
             <a>Item 3</a>
           </li>
         </ul>
-      </div> */}
+      </div>
     </div>
   );
 };
