@@ -2,7 +2,7 @@ import { render as rtlRender, screen } from '@testing-library/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
 
-const render = () => {
+export const render = () => {
   rtlRender(
     <BrowserRouter>
       <Routes>
