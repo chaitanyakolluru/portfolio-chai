@@ -1,9 +1,13 @@
-import { render } from '@testing-library/react';
+import { render as rtlRender } from '@testing-library/react';
 import App from './App';
+
+const render = () => {
+  rtlRender(<App />);
+};
 
 describe('App', () => {
   it('should show app', () => {
-    const r = render(<App />);
+    const r = render();
     expect(r).toContain('App');
   });
 });
