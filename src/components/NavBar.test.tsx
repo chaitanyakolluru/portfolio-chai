@@ -1,6 +1,19 @@
-import { screen } from '@testing-library/react';
+import { render as rtlRender, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { render } from '../App.test';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from '../pages/Home';
+import NavBar from './NavBar';
+
+export const render = () => {
+  rtlRender(
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 describe('App', () => {
   it('should show app', async () => {
