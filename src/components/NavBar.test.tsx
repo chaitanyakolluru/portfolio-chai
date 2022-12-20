@@ -2,6 +2,7 @@ import { render as rtlRender, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
+import Professional from '../pages/Professional';
 import NavBar from './NavBar';
 
 export const render = () => {
@@ -10,6 +11,7 @@ export const render = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/professional" element={<Professional />} />
       </Routes>
     </BrowserRouter>
   );

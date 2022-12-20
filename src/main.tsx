@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import './index.css';
 import Home from './pages/Home';
+import Professional from './pages/Professional';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -11,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/sumamry" element={} /> */}
+        <Route path="/professional" element={<Professional />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

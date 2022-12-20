@@ -8,12 +8,12 @@ const Card: React.FC<{
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p>{content && content}</p>
-        <ul>
+        <ol>
           {bulletedContent &&
             bulletedContent.map((item) => (
               <li key={bulletedContent.indexOf(item)}>{item}</li>
             ))}
-        </ul>
+        </ol>
       </div>
     </div>
   );
