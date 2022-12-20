@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 
-const NavBar: React.FC<{ title?: string }> = ({ title = 'Chai Portfolio' }) => {
+const NavBar: React.FC<{ title?: string }> = ({
+  title = 'Chaitanya Kolluru',
+}) => {
   // const clickToRoot = ({ title }: { title: string }) => {
   //   return (
   //     <Link to="/">
@@ -12,7 +14,7 @@ const NavBar: React.FC<{ title?: string }> = ({ title = 'Chai Portfolio' }) => {
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
-        {/* <a className="btn btn-ghost normal-case text-xl">Chai Portfolio</a> */}
+        {/* <a className="btn btn-ghost normal-case text-xl">Chaitanya Kolluru</a> */}
         <Link to="/" className="text-lg font-bold">
           <button>{title}</button>
         </Link>

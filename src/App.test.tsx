@@ -15,6 +15,6 @@ export const render = () => {
 describe('App', () => {
   it('should show app', () => {
     const r = render();
-    expect(screen.getByText('Chai Portfolio')).toBeDefined();
+    expect(screen.getByText('Chaitanya Kolluru')).toBeDefined();
   });
 });

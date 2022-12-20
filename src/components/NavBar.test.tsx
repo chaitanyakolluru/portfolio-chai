@@ -7,8 +7,8 @@ describe('App', () => {
     const r = render();
 
     await userEvent.click(
-      screen.getByRole('button', { name: /chai portfolio/i })
+      screen.getByRole('button', { name: /Chaitanya Kolluru/i })
     );
-    expect(screen.getByText('Chai Portfolio')).toBeDefined();
+    expect(screen.getByText('Chaitanya Kolluru')).toBeDefined();
   });
 });
