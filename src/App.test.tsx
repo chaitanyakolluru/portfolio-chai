@@ -1,4 +1,4 @@
-import { render as rtlRender } from '@testing-library/react';
+import { render as rtlRender, screen } from '@testing-library/react';
 import App from './App';
 
 const render = () => {
@@ -8,6 +8,6 @@ const render = () => {
 describe('App', () => {
   it('should show app', () => {
     const r = render();
-    expect(r).toContain('App');
+    expect(screen.getByText('App')).toBeDefined();
   });
 });
