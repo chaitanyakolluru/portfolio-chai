@@ -8,7 +8,7 @@ interface CardDetails {
 const details: CardDetails[] = [
   {
     title: 'SUMMARY',
-    content: [
+    bulletedContent: [
       `Motivated, self-learning, passionate engineer with a penchant for 
 automation. DevOps Engineer with a strong background in System 
 Administration of Linux servers, IaC and CI/CD, and with experience 
@@ -17,7 +17,7 @@ developing backend micro-service and web applications`,
   },
   {
     title: 'CERTIFICATIONS',
-    content: [
+    bulletedContent: [
       `Certified Kubernetes Security Specialist`,
       `Certified Kubernetes Administrator`,
       `Puppet Certified Professional`,
@@ -35,7 +35,7 @@ developing backend micro-service and web applications`,
   },
   {
     title: 'EDUCATION',
-    content: [
+    bulletedContent: [
       `Bachelor of Science in Electronics and Communication – JNTU Hyderabad – 2006 – 2010`,
       `Master of Science in Electrical Engineering – University of Missouri Kansas City – 2011 - 2012
   `,

@@ -1,5 +1,6 @@
 const Card: React.FC<{
   title: string;
+  smallText?: boolean;
   content?: string[];
   bulletedContent?: string[];
 }> = ({ title, content, bulletedContent }) => {
@@ -9,7 +10,11 @@ const Card: React.FC<{
         <h2 className="card-title">{title}</h2>
         <ul>
           {content &&
-            content.map((item) => <li key={content.indexOf(item)}>{item}</li>)}
+            content.map((item) => (
+              <li className="text-xs" key={content.indexOf(item)}>
+                {item}
+              </li>
+            ))}
         </ul>
         <br></br>
         <ol>
